@@ -82,4 +82,14 @@ public class PlayerMovement : MonoBehaviour
 		// Tell the animator whether or not the player is walking.
 		anim.SetBool ("IsWalking", walking);
 	}
+
+	void OnTriggerEnter(Collider other) {
+		if (other.gameObject.tag == "PickUp") {
+			other.gameObject.SetActive(false);
+		}
+
+		// Add to inventory
+	}
+
+
 }

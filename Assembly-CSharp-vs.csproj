@@ -5,7 +5,7 @@
 	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
 	<ProductVersion>10.0.20506</ProductVersion>
 	<SchemaVersion>2.0</SchemaVersion>
-	<ProjectGuid>{B80846A3-F3B2-C8E5-4734-9A1EA9E67FE6}</ProjectGuid>
+	<ProjectGuid>{999BEFAF-4AB4-D4C2-CA3F-04C8F0B0B266}</ProjectGuid>
 	<OutputType>Library</OutputType>
 	<AppDesignerFolder>Properties</AppDesignerFolder>
 	<RootNamespace></RootNamespace>
@@ -56,6 +56,7 @@
      <Compile Include="Assets\Scripts\Player\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerShooting.cs" />
+     <Compile Include="Assets\Scripts\Rotator.cs" />
      <Compile Include="Assets\_CompletedAssets\Scripts\Camera\CameraFollow.cs" />
      <Compile Include="Assets\_CompletedAssets\Scripts\Enemy\EnemyAttack.cs" />
      <Compile Include="Assets\_CompletedAssets\Scripts\Enemy\EnemyHealth.cs" />
