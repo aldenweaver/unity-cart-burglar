@@ -46,7 +46,8 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Scripts\RayCastCollect.js" />
+     <Compile Include="Assets\Scripts\Pick Up and Inventory\Inventory.js" />
+     <Compile Include="Assets\Scripts\Pick Up and Inventory\pickupItem.js" />
      <None Include="Assets\Models\Characters\Earthborn Troll\Shader\Alpha_Texture.shader" />
      <None Include="Assets\Models\Characters\Earthborn Troll\Shader\DoubleSided-Light-Spec.shader" />
      <None Include="Assets\Shaders\Rim Lit Bumped Specular.shader" />

@@ -1,8 +1,16 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
+
 
 public class PlayerMovement : MonoBehaviour
 {
 	public float speed = 6f;            // The speed that the player will move at.
+
+	public Text coinsLabel;
+	public Text damageLabel;
+
+	public int coinCount = 0;					// The number of coins the player has picked up
+	public int damageCount = 0;				// The number of coins the player has picked up
 	
 	Vector3 movement;                   // The vector to store the direction of the player's movement.
 	Animator anim;                      // Reference to the animator component.
@@ -18,6 +26,9 @@ public class PlayerMovement : MonoBehaviour
 		// Set up references.
 		anim = GetComponent <Animator> ();
 		playerRigidbody = GetComponent <Rigidbody> ();
+
+		coinsLabel = GameObject.FindGameObjectWithTag ("Coins").transform.GetComponent<Text>();
+		damageLabel = GameObject.FindGameObjectWithTag ("Damage").transform. GetComponent<Text>();;
 	}
 	
 	
@@ -84,12 +95,23 @@ public class PlayerMovement : MonoBehaviour
 	}
 
 	void OnTriggerEnter(Collider other) {
+		// If object is coins, add to inventory
 		if (other.gameObject.tag == "PickUp") {
-			other.gameObject.SetActive(false);
+			coinCount++;
+			coinsLabel.text = "Coins: " + coinCount;
+			Destroy(other.gameObject);
 		}
 
-		// Add to inventory
+		// If object is enemy, add to damage
+		if (other.gameObject.tag == "Enemy") {
+			damageCount++;
+			damageLabel.text = "Damage: " + damageCount;
+			Destroy(other.gameObject);
+		}
+		
+	
 	}
+
 
 
 }

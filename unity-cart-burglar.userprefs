@@ -2,13 +2,17 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Player\PlayerMovement.cs">
     <Files>
+      <File FileName="Assets\Scripts\Player\PlayerMovement.cs" Line="23" Column="46" />
       <File FileName="Assets\Scripts\Rotator.cs" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\Player\PlayerMovement.cs" Line="71" Column="4" />
-      <File FileName="Assets\Scripts\Enemy\EnemyMovement.cs" Line="10" Column="2" />
+      <File FileName="Assets\Scripts\Enemy\EnemyMovement.cs" Line="14" Column="72" />
+      <File FileName="Assets\Scripts\Managers\ScoreManager.cs" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Pick Up and Inventory\Inventory.js" Line="13" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="C:\Users\Clinic\Documents\GitHub\unity-cart-burglar\Assets\Scripts\Managers\ScoreManager.cs" line="2" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

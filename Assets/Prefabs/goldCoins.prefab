@@ -14,6 +14,7 @@ GameObject:
   - 111: {fileID: 11100000}
   - 114: {fileID: 11400000}
   - 54: {fileID: 5400000}
+  - 114: {fileID: 11400002}
   m_Layer: 0
   m_Name: goldCoins
   m_TagString: PickUp
@@ -28,7 +29,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: -.296806633, y: .570159376, z: .679489613, w: .353720248}
-  m_LocalPosition: {x: 9.1225996, y: 8.16600037, z: 7.17850018}
+  m_LocalPosition: {x: 11.5410004, y: .893480003, z: 10.9940004}
   m_LocalScale: {x: .00591599196, y: .00591599243, z: .00591599243}
   m_Children: []
   m_Father: {fileID: 0}
@@ -111,6 +112,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: a2b9a764d359abc488175d596dff49eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &11400002
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee35a5e98838a664887c4b2ecdcf9db2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &100100000
