@@ -7,3 +7,7 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/_CompletedAssets/Scenes/Level 01.unity
+  - enabled: 1
+    path: Assets/Scenes/GameLostScene.unity
+  - enabled: 1
+    path: Assets/Scenes/GameWonScene.unity

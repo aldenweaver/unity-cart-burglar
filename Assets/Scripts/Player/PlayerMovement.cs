@@ -18,6 +18,8 @@ public class PlayerMovement : MonoBehaviour
 	int floorMask;                      // A layer mask so that a ray can be cast just at gameobjects on the floor layer.
 	float camRayLength = 100f;          // The length of the ray from the camera into the scene.
 	
+
+
 	void Awake ()
 	{
 		// Create a layer mask for the floor layer.
@@ -30,7 +32,22 @@ public class PlayerMovement : MonoBehaviour
 		coinsLabel = GameObject.FindGameObjectWithTag ("Coins").transform.GetComponent<Text>();
 		damageLabel = GameObject.FindGameObjectWithTag ("Damage").transform. GetComponent<Text>();;
 	}
-	
+
+	void Update()
+	{
+		// Check if game is lost
+		if (damageCount >= 200)
+		{
+			Application.LoadLevel("GameLostScene");
+		}
+		
+		// Check if game is won
+		if (coinCount >= 20)
+		{
+			Application.LoadLevel("GameWonScene");
+		}
+	}
+
 	
 	void FixedUpdate ()
 	{
