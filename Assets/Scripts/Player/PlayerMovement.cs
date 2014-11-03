@@ -98,15 +98,16 @@ public class PlayerMovement : MonoBehaviour
 		// If object is coins, add to inventory
 		if (other.gameObject.tag == "PickUp") {
 			coinCount++;
-			coinsLabel.text = "Coins: " + coinCount;
-			Destroy(other.gameObject);
+			coinsLabel.text = "Treasures: " + coinCount;
+			other.gameObject.SetActive(false);
 		}
 
 		// If object is enemy, add to damage
 		if (other.gameObject.tag == "Enemy") {
 			damageCount++;
 			damageLabel.text = "Damage: " + damageCount;
-			Destroy(other.gameObject);
+			other.gameObject.SetActive(false);
+			other.gameObject.SetActive(true);
 		}
 		
 	
