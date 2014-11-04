@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\Player\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Player\PlayerShooting.cs" />
      <Compile Include="Assets\Scripts\Rotator.cs" />
+     <Compile Include="Assets\UIManageScript.cs" />
      <Compile Include="Assets\_CompletedAssets\Scripts\Camera\CameraFollow.cs" />
      <Compile Include="Assets\_CompletedAssets\Scripts\Enemy\EnemyAttack.cs" />
      <Compile Include="Assets\_CompletedAssets\Scripts\Enemy\EnemyHealth.cs" />
